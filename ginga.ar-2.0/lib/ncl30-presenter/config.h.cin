@@ -1,0 +1,12 @@
+/* config.h template for cmake */
+#define ${PROJECT_NAME_UPPERCASE_ESCAPED}_VERSION "${VERSION}"
+
+/* Prefix of the configuration path*/
+#define CONFIG_PREFIX_PATH "${CMAKE_CONFIG_INSTALL_PREFIX}"
+
+/* Prefix of the data path*/
+#if GINGA_LAUNCHER
+#define DATA_PREFIX_PATH "/mnt/lg/cmn_data/ginga_persistent"
+#else
+#define DATA_PREFIX_PATH "${CMAKE_INSTALL_PREFIX}"
+#endif

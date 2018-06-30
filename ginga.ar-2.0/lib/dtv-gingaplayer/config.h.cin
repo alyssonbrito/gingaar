@@ -1,0 +1,15 @@
+/* config.h template for cmake */
+#define ${PROJECT_NAME_UPPERCASE}_VERSION ${VERSION}
+
+/* Prefix of the data path*/
+#if GINGA_LAUNCHER
+#define DATA_PREFIX_PATH "/mnt/lg/cmn_data/ginga_persistent"
+#else
+#define DATA_PREFIX_PATH "${CMAKE_INSTALL_PREFIX}"
+#endif
+
+/* Defines the PATH of the Connector socket */
+#define GINGA_CONNECTOR_SOCKET ${GINGA_CONNECTOR_SOCKET}
+
+#cmakedefine TEST_GINGAPLAYER_TCP ${TEST_GINGAPLAYER_TCP}
+

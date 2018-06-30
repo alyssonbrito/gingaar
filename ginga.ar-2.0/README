@@ -1,0 +1,117 @@
+=====================================
+Ginga-NCL
+=====================================
+
+(For english scroll down)
+
+===============================
+http://tvd.lifia.info.unlp.edu.ar/ginga.ar/index.php/download
+Acerca
+===============================
+
+Ginga.ar es una implementaci?n del est?ndar ginga-NCL, desarrollada por el equipo de TV Digital del laboratorio LIFIA de la Universidad Nacional de La Plata (Argentina), a partir de la implementaci?n de referencia Ginga-ncl creada por la PUC de Rio de Janeiro (Brasil).
+
+El middleware Ginga.ar fue portado a las arquitecturas Celestial y ST e instalado en Set Top Boxes comerciales dise?ados y producidos en Argentina. Estos Set Top Boxes son distribuidos en el proyecto de TV Digital del gobierno argentino.
+
+Ginga.ar es Software Libre, las licencias utilizadas son GPLv2 y LGPLv2, e incluye librer?as con otras licencias libres
+
+Desde la versi?n 2.2, Ginga.ar forma parte de Kuntur. Versiones previas a la versi?n 2.2 pueden descargarse a continuaci?n.
+
+
+
+===============================
+Compilar y correr Ginga 2.0
+===============================
+http://tvd.lifia.info.unlp.edu.ar/ginga.ar/index.php/download/10-docs/54
+-------------------------------
+Compilaci?n
+-------------------------------
+
+Los pasos necesarios para compilar Ginga.ar 2.0 en Linux son:
+
+Instalar dependencias, en Ubuntu:
+    Boost
+    XERCESC
+    EV
+    DB
+    GTK2 (2.33.3)
+    GDK-PIXBUF
+    GLIB PANGO
+    CAIRO
+    LIBSOUP2
+    WEBKIT
+    LIBVLC
+    LUA
+    CURL
+
+Pasos de construcci?n, dentro de la carpeta donde se descomprimieron los fuentes:
+
+    cd build
+    <Modificar el script de compilación "build.ginga.sh">
+    ./build.ginga.sh --build
+
+Finalizada la compilaci?n en UNIX/bin/ginga se encuentra el binario de Ginga.ar
+Para m?s opciones editar los archivos de configuraci?n de build (ver gu?a)
+
+-------------------------------
+Ejecutar una aplicaci?n NCLua
+-------------------------------
+
+Desde consola: ginga --ncl application_path.ncl
+
+
+
+
+
+(ENGLISH VERSION)
+(ENGLISH VERSION)
+(ENGLISH VERSION)
+(ENGLISH VERSION)
+(ENGLISH VERSION)
+===============================
+Compilation and execution of
+Ginga 2.0
+===============================
+
+-------------------------------
+Compilation
+-------------------------------
+
+The steps necessaries to build Ginga.ar 2.0 in Linux machine are:
+
+
+Install the dependencies on Ubuntu:
+    Boost
+    XERCESC
+    EV
+    DB
+    GTK2
+    GDK-PIXBUF
+    GLIB PANGO
+    CAIRO
+    LIBSOUP2
+    WEBKIT
+    LIBVLC
+    LUA
+    CURL
+
+
+The steps to build, inside the folder where the source was decompress:
+
+    cd build
+    <Modify the build script "build.ginga.sh">
+    ./build.ginga.sh --build
+
+
+Once the build process is over, in UNIX/bin/ginga the binary of ginga.ar is found.
+For more option edit the configuration build files.
+
+
+-------------------------------
+Run an NCLua application
+-------------------------------
+
+On the console:
+    ginga --ncl application_path.ncl
+
+
